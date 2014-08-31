@@ -20,6 +20,7 @@ public DocumentVectorCalculator(List<String> documentList)
 	
 }
 
+
 public void generateTFScores()
 {
 	for(String t:documentList)
@@ -78,6 +79,9 @@ private double calcIDF(String word)
 	return Math.log((double)rho/(double)rhow);
 }
 
+/*
+ * Generates TF-IDF scores
+ */
 public List<Hashtable<String,Double>> generateTF_IDFScores()
 {
 	generateTFScores();
