@@ -1,5 +1,9 @@
 package com.gazelle.sumrize.controller;
 
+/*
+ * Class to verify the functionality of the application.
+ * 
+ */
 import java.util.Hashtable;
 import java.util.List;
 
@@ -12,12 +16,18 @@ import com.gazelle.sumrize.webtextextractor.WebPageTextExtractor;
 
 public class Controller {
 	
-	WebPageTextExtractor wpTextExtractor; // will extract text
-	TextPreprocessor textPreprocessor;
+	WebPageTextExtractor wpTextExtractor;	// will extract text
+	TextPreprocessor textPreprocessor;				
 	ExtractSentence extractSentence;
 	Lexrank lexrank;
 	List<Hashtable<String,Double>> score;
 	int [] degree;
+	
+	/*
+	 * Method to be called from outside. Verified working URL is provided as input.
+	 * The method returns the summary as String.
+	 * Can be made to return a list of Strings (sentences). Check what is required?
+	 */
 	
 	public String getSummary(String url) throws Exception{
 		

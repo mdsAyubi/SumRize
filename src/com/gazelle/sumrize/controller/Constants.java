@@ -1,5 +1,8 @@
 package com.gazelle.sumrize.controller;
 
+/*
+ * A collection of constants.
+ */
 public class Constants {
 
 	public static final String EMPTY_URL_FIELD="Empty URL field";
