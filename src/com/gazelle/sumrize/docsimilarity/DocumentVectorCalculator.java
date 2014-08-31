@@ -81,6 +81,7 @@ private double calcIDF(String word)
 
 /*
  * Generates TF-IDF scores
+ * 
  */
 public List<Hashtable<String,Double>> generateTF_IDFScores()
 {
