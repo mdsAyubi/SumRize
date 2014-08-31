@@ -2,6 +2,7 @@ package com.gazelle.sumrize.controller;
 
 /*
  * A collection of constants.
+ * 
  */
 public class Constants {
 
